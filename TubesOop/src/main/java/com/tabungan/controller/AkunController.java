@@ -96,4 +96,7 @@ public class AkunController {
         return akun;
     }
  }
+<<<<<<< HEAD
 
+=======
+>>>>>>> de349ce65a0ca2d3585659250a0b5f5dc36fbdd4
