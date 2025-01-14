@@ -1,5 +1,9 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.tabungan.controller;
 
-package controller;
 import com.tabungan.model.Dashboard;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,7 +22,7 @@ public class DashboardController {
     private ConnectionManager conMan;
     
     public DashboardController() {
-        this.conMan = new ConnectionManager(); // Inisialisasi koneksi database
+        this.conMan = new ConnectionManager(); // koneksi ke database
     }
     // Metode untuk menambah tabungan
     public boolean tambahTabungan(Dashboard dashboard) {
@@ -130,6 +134,7 @@ public class DashboardController {
     }
 
 }
+
 
 
 
