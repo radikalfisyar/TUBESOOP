@@ -1,5 +1,6 @@
 
-package controller;
+package com.tabungan.controller;
+
 import com.tabungan.model.Dashboard;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,12 +14,11 @@ import com.tabungan.utils.ConnectionManager;
  * @author 162023046 - Naufal Fadhil Setiawan
  */
 public class DashboardController {
-
-
     private ConnectionManager conMan;
     
     public DashboardController() {
-        this.conMan = new ConnectionManager(); // Inisialisasi koneksi database
+        this.conMan = new ConnectionManager(); // koneksi ke database
+
     }
     // Metode untuk menambah tabungan
     public boolean tambahTabungan(Dashboard dashboard) {
@@ -130,8 +130,6 @@ public class DashboardController {
     }
 
 }
-
-
 
 
 
