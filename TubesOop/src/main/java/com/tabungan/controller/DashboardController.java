@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.tabungan.controller;
 import com.tabungan.model.Dashboard;
 import java.sql.Connection;
@@ -13,14 +10,9 @@ import java.util.List;
 import com.tabungan.utils.ConnectionManager;
 /**
  *
- * @author Acer
+ * @author 162023046 - Naufal Fadhil Setiawan
  */
 public class DashboardController {
-    /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
 
 
     private ConnectionManager conMan;
@@ -115,6 +107,28 @@ public class DashboardController {
         return false; // Mengembalikan false jika gagal
     }
     }
+    
+    public List<Dashboard> searchTabungan(String username, String keyword) {
+        String query = "SELECT * FROM tabungan WHERE username = ? AND nama_tabungan LIKE ?";
+        List<Dashboard> daftarTabungan = new ArrayList<>();
+        try (Connection conn = conMan.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setString(1, username);
+            stmt.setString(2, "%" + keyword + "%");
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                daftarTabungan.add(new Dashboard(
+                        rs.getString("username"),
+                        rs.getString("nama_tabungan"),
+                        rs.getDouble("target_tabungan"),
+                        rs.getDouble("total_terkumpul")
+                ));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return daftarTabungan;
+    }
+
 }
 
 
@@ -122,4 +136,4 @@ public class DashboardController {
 
 
 
-}
+
