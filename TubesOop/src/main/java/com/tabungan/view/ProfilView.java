@@ -80,7 +80,6 @@ public class ProfilView extends javax.swing.JFrame {
 
         btnBack1.setBackground(new java.awt.Color(102, 102, 255));
         btnBack1.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack1.setIcon(new javax.swing.ImageIcon("C:\\Users\\radik\\Downloads\\ICONS-PROJEK\\icons8-left-26.png")); // NOI18N
         btnBack1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBack1ActionPerformed(evt);
@@ -93,9 +92,9 @@ public class ProfilView extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
-        btnBack2.setBackground(new java.awt.Color(102, 102, 255));
+        btnBack2.setBackground(new java.awt.Color(204, 204, 255));
         btnBack2.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack2.setIcon(new javax.swing.ImageIcon("C:\\Users\\radik\\Downloads\\ICONS-PROJEK\\icons8-left-26.png")); // NOI18N
+        btnBack2.setIcon(new javax.swing.ImageIcon("D:\\Documents\\icon baru\\icons8-back-26.png")); // NOI18N
         btnBack2.setText("Kembali");
         btnBack2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,7 +104,7 @@ public class ProfilView extends javax.swing.JFrame {
 
         btnLogout.setBackground(new java.awt.Color(204, 204, 255));
         btnLogout.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogout.setIcon(new javax.swing.ImageIcon("C:\\Users\\radik\\Downloads\\ICONS-PROJEK\\icons8-log-out-26.png")); // NOI18N
+        btnLogout.setIcon(new javax.swing.ImageIcon("D:\\Documents\\icon baru\\icons8-logout-26.png")); // NOI18N
         btnLogout.setText("Keluar");
         btnLogout.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -120,18 +119,18 @@ public class ProfilView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBack2)
+                    .addComponent(btnBack2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnLogout))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(btnBack2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(btnBack2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+                .addComponent(btnLogout)
+                .addGap(17, 17, 17))
         );
 
         jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 1, 24)); // NOI18N
