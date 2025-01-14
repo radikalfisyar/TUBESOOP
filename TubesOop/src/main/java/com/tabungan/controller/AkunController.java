@@ -16,14 +16,6 @@ import java.sql.SQLException;
  * @author Yasmin
  */
 public class AkunController {
-import com.tabungan.model.Akun;
-import com.tabungan.utils.ConnectionManager;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-public class AkunController {
     private ConnectionManager conMan;
     private Akun akun; // Variabel untuk menyimpan objek Akun
 
