@@ -1,5 +1,5 @@
 
-package com.tabungan.controller;
+package controller;
 import com.tabungan.model.Dashboard;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -74,10 +74,10 @@ public class DashboardController {
         try (Connection conn = conMan.getConnection(); PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setDouble(1, jumlah);
             stmt.setString(2, namaTabungan);
-            return stmt.executeUpdate() > 0; // Mengembalikan true jika berhasil ditambahkan
+            return stmt.executeUpdate() > 0; 
         } catch (SQLException e) {
             e.printStackTrace();
-            return false; // Mengembalikan false jika gagal
+            return false; 
         }
     }
 
