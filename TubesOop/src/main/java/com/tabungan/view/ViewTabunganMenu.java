@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author radik
+ * @author M.R.FIRDAUS
  */
 public class ViewTabunganMenu extends javax.swing.JFrame {
     private final String username;
